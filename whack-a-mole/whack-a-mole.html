@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Whack-A-Mole</title>
+    <!-- ==== WHACKY-CSS ==== -->
+    <link rel="stylesheet" href="css/whack-a-mole.css">
+    <!-- ==== GOOGLE FONTS ====-->
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+<header class="header-container">
+    <h1>Whack-A-Mole</h1>
+</header>
+
+<section class="game-information-container">
+    <div class="instruction-message">
+        <p>Click the mole to earn points!</p>
+    </div>
+    <div class="score-board">
+        <span id="timer" class="timer"></span>
+        <p id="score-card">Score:</p>
+    </div>
+</section>
+
+<main class="game-board-container">
+    <section class="game-board">
+        <div class="game-tile"></div>
+        <div class="game-tile"></div>
+        <div class="game-tile"></div>
+        <div class="game-tile"></div>
+        <div class="game-tile"></div>
+        <div class="game-tile"></div>
+        <div class="game-tile"></div>
+        <div class="game-tile"></div>
+        <div class="game-tile"></div>
+    </section>
+</main>
+
+<section class="buttons-container">
+    <section class="play-button-container">
+        <button type="button" class="play-button" id="play-button">Click to Play</button>
+    </section>
+    <section class="pause-button-container">
+        <button type="button" class="pause-button" id="pause-button">Pause</button>
+    </section>
+</section>
+
+<!-- ===== GAME SCRIPT ==== -->
+<script src="js/whack-a-mole.js"></script>
+</body>
+</html>
