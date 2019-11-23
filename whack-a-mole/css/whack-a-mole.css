@@ -1,0 +1,136 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("../img/whack-a-mole-backdrop.png");
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Press Start 2P', cursive;
+}
+
+h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    margin: 0;
+}
+
+/* ==== HEADER ==== */
+.header-container {
+    display: flex;
+    justify-content: center;
+}
+
+/* ==== GAME INFO ==== */
+.game-information-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.timer {
+    margin-right: 1em;
+    border-bottom: 3px solid gold;
+}
+
+.instruction-message {
+    margin-top: 1em;
+    display: flex;
+    justify-content: center;
+}
+
+.score-card {
+    border-bottom: 3px solid gold;
+}
+
+.score-board {
+    margin: 1em 0;
+    display: flex;
+    justify-content: center;
+}
+
+/* ==== GAME BOARD ==== */
+.game-board-container {
+    display: flex;
+    justify-content: center;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: 8em 8em 8em;
+    grid-template-rows: 8em 8em 8em;
+    background-color: rgba(153, 102, 51, 0.3);
+}
+
+.game-tile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    height: 8em;
+    width: 8em;
+}
+
+/* ==== MOLE STYLING ==== */
+.moleStyle {
+    border-radius: 1em;
+    height: 7em;
+    width: 7em;
+}
+
+/* ==== BUTTONS-CONTAINER ==== */
+.buttons-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==== PLAY BUTTON ==== */
+.play-button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+    margin-bottom: .25em;
+}
+
+.play-button {
+    width: 10em;
+    height: 3em;
+    font-size: 24px;
+    outline: none;
+    border: 2px solid green;
+    border-radius: 10px;
+    background-color: white;
+}
+
+button.play-button:hover:enabled {
+    background-color: green;
+    color: yellow;
+    border-color: goldenrod;
+}
+
+/* ==== PAUSE BUTTON ==== */
+.pause-button-container {
+    display: flex;
+    justify-content: center;
+    margin: .25em;
+}
+
+.pause-button {
+    width: 10em;
+    height: 3em;
+    font-size: 24px;
+    outline: none;
+    border: 2px solid green;
+    border-radius: 10px;
+    background-color: white;
+}
+
+button.pause-button:hover:enabled {
+    background-color: green;
+    color: yellow;
+    border-color: goldenrod;
+}
